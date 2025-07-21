@@ -280,7 +280,7 @@ function check_parquet() {
 
     local total_obs_flat
     total_obs_flat=$(retry_rowcount \
-      "${output}/*/VIEWS_TIMESTAMP_*/observation_flat/":"${output}/*/observation_flat/" \
+      "${output}/*/VIEWS_TIMESTAMP_*/observation_flat/" \
       "${TOTAL_TEST_OBS}" \
       "observation_flat") || true
     # ------------------------------------------------------------------
